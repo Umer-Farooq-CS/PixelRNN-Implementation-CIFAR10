@@ -1,0 +1,87 @@
+PIXELRNN MODELS COMPREHENSIVE EVALUATION REPORT
+============================================================
+
+Generated on: 2025-09-21 16:55:12
+
+EXECUTIVE SUMMARY
+--------------------
+This report presents a comprehensive evaluation of three PixelRNN model architectures:
+1. PixelCNN - Masked convolutional neural network
+2. Row LSTM - Row-wise LSTM processing
+3. Diagonal BiLSTM - Diagonal bidirectional LSTM processing
+
+PERFORMANCE RANKING
+--------------------
+1. DIAGONAL_BILSTM
+   NLL: 5.476352
+   Bits per Dimension: 0.001783
+   Composite Score: -7.26
+
+2. ROW_LSTM
+   NLL: 6.530092
+   Bits per Dimension: 0.002126
+   Composite Score: -8.66
+
+3. PIXELCNN
+   NLL: 68.307648
+   Bits per Dimension: 0.022236
+   Composite Score: -90.54
+
+DETAILED RESULTS
+--------------------
+
+ROW_LSTM MODEL:
+  Negative Log-Likelihood: 6.530092
+  Bits per Dimension: 0.002126
+  Test Batches Evaluated: 313
+  Sample Quality Metrics:
+    Mean Pixel Value: 0.472314
+    Pixel Diversity: 0.251560
+    Channel Means (R,G,B): [0.48728567361831665, 0.4841117858886719, 0.445544958114624]
+    Channel Stds (R,G,B): [0.24725781381130219, 0.2435152679681778, 0.2614016830921173]
+
+PIXELCNN MODEL:
+  Negative Log-Likelihood: 68.307648
+  Bits per Dimension: 0.022236
+  Test Batches Evaluated: 313
+  Sample Quality Metrics:
+    Mean Pixel Value: 0.342440
+    Pixel Diversity: 0.286375
+    Channel Means (R,G,B): [0.12787392735481262, 0.3646847605705261, 0.5347383618354797]
+    Channel Stds (R,G,B): [0.18103395402431488, 0.2591909170150757, 0.2501477301120758]
+
+DIAGONAL_BILSTM MODEL:
+  Negative Log-Likelihood: 5.476352
+  Bits per Dimension: 0.001783
+  Test Batches Evaluated: 625
+  Sample Quality Metrics:
+    Mean Pixel Value: 0.466062
+    Pixel Diversity: 0.259944
+    Channel Means (R,G,B): [0.4718592166900635, 0.4638916552066803, 0.46244075894355774]
+    Channel Stds (R,G,B): [0.25762319564819336, 0.25530555844306946, 0.2666647136211395]
+
+
+KEY FINDINGS
+--------------------
+• Best Performing Model: DIAGONAL_BILSTM
+  - Achieved lowest NLL of 5.476352
+  - Achieved lowest bits per dimension of 0.001783
+
+• Performance Gap:
+  - NLL difference from second best: 1.053740
+  - Bits per dimension difference: 0.000343
+
+TECHNICAL NOTES
+--------------------
+• All models were trained on CIFAR-10 dataset (32x32x3 images)
+• Evaluation metrics include negative log-likelihood and bits per dimension
+• Generated samples were evaluated for quality and diversity
+• Lower NLL and bits per dimension indicate better model performance
+• Composite score combines both metrics for overall ranking
+
+RECOMMENDATIONS
+--------------------
+• Use DIAGONAL_BILSTM for best overall performance
+• Consider computational efficiency vs. performance trade-offs
+• Further hyperparameter tuning may improve results
+• Consider ensemble methods for even better performance

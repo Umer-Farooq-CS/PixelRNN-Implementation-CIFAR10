@@ -1,0 +1,47 @@
+PIXELRNN PROJECT FILE INVENTORY
+==================================================
+
+Generated on: 2025-09-21 16:56:42
+
+RESULTS FILES:
+--------------------
+  FILE_INVENTORY.txt                       (0 bytes)
+  MASTER_EVALUATION_REPORT.md              (5,476 bytes)
+  comprehensive_evaluation_report.txt      (2,838 bytes)
+  comprehensive_model_comparison.csv       (790 bytes)
+  diagonal_bilstm_evaluation_20250921_150558.json (1,051,094 bytes)
+  diagonal_bilstm_evaluation_20250921_165346.json (1,050,866 bytes)
+  model_comparison.csv                     (332 bytes)
+  pixelcnn_evaluation_20250920_233321.json (975,407 bytes)
+  pixelcnn_evaluation_20250920_233722.json (1,070,719 bytes)
+  pixelcnn_evaluation_20250921_165001.json (1,041,779 bytes)
+  row_lstm_evaluation_20250921_144342.json (1,052,940 bytes)
+  row_lstm_evaluation_20250921_165224.json (1,052,913 bytes)
+
+PLOTS FILES:
+--------------------
+  cifar10_samples.png                      (81,651 bytes)
+  detailed_metrics_comparison.png          (389,327 bytes)
+  diagonal_bilstm_generated_samples.png    (137,672 bytes)
+  diagonal_bilstm_training_history.png     (513,973 bytes)
+  model_comparison.png                     (61,944 bytes)
+  performance_ranking.png                  (98,870 bytes)
+  pixelcnn_generated_samples.png           (101,917 bytes)
+  pixelcnn_training_history.png            (648,039 bytes)
+  row_lstm_generated_samples.png           (135,863 bytes)
+  row_lstm_training_history.png            (551,291 bytes)
+
+MODELS FILES:
+--------------------
+  diagonal_bilstm_best.keras               (32,211,234 bytes)
+  pixelcnn_best.keras                      (9,441,135 bytes)
+  pixelcnn_epoch_10.keras                  (9,441,135 bytes)
+  pixelcnn_epoch_20.keras                  (9,441,135 bytes)
+  pixelcnn_final.keras                     (9,441,135 bytes)
+  row_lstm_best.keras                      (69,971,869 bytes)
+  row_lstm_epoch_10.keras                  (69,971,869 bytes)
+
+SUMMARY:
+--------------------
+Total files generated: 29
+Total size: 219,945,213 bytes (209.76 MB)
